@@ -19,7 +19,7 @@ const wishRoute=require("./routes/wishlist");
 
 // app.use(cookie)
 app.use(cors({
-    origin:' http://localhost:3000',
+    origin:`${process.env.BaseUrl}`,
     credentials: true,
   }));
 app.use(bodyParser.urlencoded({ extended: true }))

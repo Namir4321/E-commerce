@@ -8,7 +8,7 @@ console.log({userId,accesstokener,email})
   const tokener=jwt.sign({userId:userId},secret,{
     expiresIn:'2m'
   })
-const verifylink=`http://localhost:3000/resetpassword/${userId}/${tokener}`
+const verifylink=`${process.env.BaseUrl}/resetpassword/${userId}/${tokener}`
   try {
     if (req.body) {
       mailer({
