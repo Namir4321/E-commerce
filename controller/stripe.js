@@ -24,8 +24,8 @@ exports.stripePayment = async (req, res, next) => {
         "MX", "MY", "MZ", "NA", "NC", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NU", "NZ", "OM", "PA", "PE", "PF", "PG", "PH", "PK", "PL", "PM", "PN", "PR", "PS", "PT", "PY", "QA", "RE", "RO", "RS", "RU", "RW", "SA", "SB", "SC", "SE", "SG", "SH", "SI", "SJ", "SK", "SL", "SM", "SN", "SO", "SR", "SS", "ST", "SV", "SX", "SZ", "TA", "TC", "TD", "TF", "TG", "TH", "TJ", "TK", "TL", "TM", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VA", "VC", "VE", "VG", "VN", "VU", "WF", "WS", "XK", "YE", "YT", "ZA", "ZM", "ZW", "ZZ"],
           },
           
-        success_url:`https://e-commerce-szxe.onrender.com/api/success?sessionId={CHECKOUT_SESSION_ID}`,
-    cancel_url:`https://e-commerce-szxe.onrender.com/api/cart`,
+        success_url:`https://e-commerce-szxe.onrender.com/success?sessionId={CHECKOUT_SESSION_ID}`,
+    cancel_url:`https://e-commerce-szxe.onrender.com/cart`,
     });
    
 
