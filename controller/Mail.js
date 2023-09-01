@@ -69,7 +69,7 @@ exports.postforgotMail = async (req, res, next) => {
       const tokener=jwt.sign({userId:user._id,isAdmin:user.isAdmin},secret,
           {expiresIn:"3d"
   })
-  const verifylink=`http://localhost:3000/resetpassword/${user._id}/${tokener}`
+  const verifylink=`${process.env.BaseUrl}/resetpassword/${user._id}/${tokener}`
   console.log(verifylink)   
   if (req.body) {
     console.log("working")
