@@ -19,7 +19,7 @@ const wishRoute=require("./routes/wishlist");
 
 // app.use(cookie)
 app.use(cors({
-    origin:`${process.env.BaseUrl}`,
+    origin:process.env.BaseUrl.split(','),
     credentials: true,
   }));
 app.use(bodyParser.urlencoded({ extended: true }))
